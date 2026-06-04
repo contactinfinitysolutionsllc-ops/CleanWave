@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleanWave — Audio Finishing for AI Music</title>
+  <meta name="description" content="CleanWave is a free Windows toolkit for finishing AI-generated music. Loudness normalization, stem separation, surgical editing, and mastering export." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="CleanWave — Audio Finishing for AI Music" />
+  <meta property="og:description" content="Free Windows toolkit for finishing AI-generated music. Loudness normalization, stem separation, surgical editing, and mastering export." />
+  <meta property="og:image" content="https://cleanwave.infinityhub.dev/assets/og-image.png" />
+  <meta property="og:url" content="https://cleanwave.infinityhub.dev" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+</head>
+<body>
+
+  <!-- ── Nav ──────────────────────────────────────────────────────────── -->
+  <nav>
+    <a href="#" class="nav-logo">
+      <img src="assets/logo.png" alt="CleanWave" class="nav-logo-img" />
+      CleanWave
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#honest">Honest Notes</a>
+      <a href="#download">Download</a>
+      <a href="https://infinityhub.dev" target="_blank">InfinityHub</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ─────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="badge">Free · Windows 64-bit · No system install</div>
+      <h1>CleanWave</h1>
+      <p class="tagline">Audio finishing toolkit for AI-generated music.</p>
+      <p class="sub">
+        Loudness normalization. Stem separation. Surgical region editing.
+        Platform mastering export. Built specifically for the problems
+        AI music generators leave behind.
+      </p>
+      <div class="hero-actions">
+        <a href="#download" class="btn-primary">Download Free</a>
+        <a href="#features" class="btn-secondary">See what it does</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="mock-window">
+        <div class="mock-titlebar">
+          <span class="mock-dot red"></span>
+          <span class="mock-dot amber"></span>
+          <span class="mock-dot green"></span>
+          <span class="mock-title">CleanWave 1.0</span>
+        </div>
+        <div class="mock-tabs">
+          <span class="mock-tab active">Clean</span>
+          <span class="mock-tab">Stems</span>
+          <span class="mock-tab">Editor</span>
+          <span class="mock-tab">Output</span>
+        </div>
+        <div class="mock-body">
+          <div class="mock-preset-row">
+            <span class="mock-label">Preset</span>
+            <span class="mock-chip">Gentle</span>
+            <span class="mock-chip active">Balanced</span>
+            <span class="mock-chip">Vocal</span>
+            <span class="mock-chip">Strong</span>
+          </div>
+          <div class="mock-waveform">
+            <svg viewBox="0 0 320 48" xmlns="http://www.w3.org/2000/svg">
+              <polyline points="0,24 8,18 16,28 24,12 32,30 40,20 48,26 56,10 64,32 72,22 80,28 88,14 96,30 104,24 112,16 120,32 128,20 136,26 144,8 152,34 160,22 168,28 176,14 184,30 192,24 200,18 208,28 216,12 224,32 232,20 240,26 248,14 256,30 264,22 272,18 280,30 288,16 296,28 304,22 312,26 320,24"
+                fill="none" stroke="#00b4d8" stroke-width="1.5" opacity="0.7"/>
+              <rect x="80" y="8" width="60" height="32" fill="#00b4d8" opacity="0.12" rx="2"/>
+              <rect x="200" y="8" width="40" height="32" fill="#a855f7" opacity="0.12" rx="2"/>
+            </svg>
+          </div>
+          <div class="mock-stat-row">
+            <span class="mock-stat green">✓ 12 files processed</span>
+            <span class="mock-stat">→ output\cleaned\</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Features ─────────────────────────────────────────────────────── -->
+  <section id="features" class="section">
+    <h2>What CleanWave does</h2>
+    <div class="feature-grid">
+
+      <div class="feature-card">
+        <div class="feat-icon">📊</div>
+        <h3>Loudness Normalization</h3>
+        <p>Batch-normalize to Spotify, CDBaby, YouTube, Apple Music, or DistroKid specs.
+           16/24/32-bit output, TPDF dither on 16-bit, correct sample rate conversion.
+           Set it once, apply to everything.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">🎤</div>
+        <h3>Stem Separation</h3>
+        <p>Powered by Facebook's Demucs (htdemucs model). Splits vocals from music so
+           you can process each independently. Clean only the vocals — the music
+           passes through untouched. Prevents the "underwater effect" you get from
+           processing the full mix.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">🔬</div>
+        <h3>Surgical Region Editor</h3>
+        <p>Load any track, mark problem sections, auto-detect artifact regions by
+           spectral analysis. Set a different cleaning preset per region. Preview
+           each fix before committing. Build, export, done.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">⚡</div>
+        <h3>AI Vocal Processing</h3>
+        <p>DeepFilterNet neural denoiser and WPE dereverberation run on isolated vocal
+           stems after separation — never on the full mix. Helps with noise floor and
+           room echo on recorded vocals or voice-forward AI tracks.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">🎚️</div>
+        <h3>Notch Filter System</h3>
+        <p>Targeted EQ cuts for the known Suno artifact frequency zones:
+           320–400 Hz mud, 3.5–5 kHz metallic ring, 5–7 kHz AI shimmer,
+           8–12 kHz v5.5 hiss. Tunable Q and gain per notch.
+           Spectrogram view helps you find your own.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feat-icon">📦</div>
+        <h3>Batch &amp; Export</h3>
+        <p>Drop a folder of tracks, pick a preset, walk away.
+           Step Mode lets you compare Gentle → Balanced → Strong on your originals
+           before committing. Sample clip generator cuts preview MP3s from every
+           queued file automatically.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Honest notes ──────────────────────────────────────────────────── -->
+  <section id="honest" class="section honest-section">
+    <h2>Honest about what it can't do</h2>
+    <p class="honest-intro">
+      Most "AI artifact remover" tools oversell. We'd rather be straight with you.
+    </p>
+    <div class="honest-grid">
+      <div class="honest-card">
+        <h3>The Suno v5.5 ringing problem</h3>
+        <p>The metallic harmonic artifact that defines Suno v5.5 is baked into the
+           synthesis model's transposed convolution layers. The artifact frequency and
+           the real musical note underneath it are <em>literally the same Hz</em>. A notch
+           filter that kills the ring also softens the note. CleanWave's notch system
+           reduces it — narrow, shallow cuts that minimize collateral damage — but it
+           cannot remove it cleanly without affecting the music. No tool can. This is
+           a problem for Suno to fix at the model level.</p>
+      </div>
+      <div class="honest-card">
+        <h3>DeepFilterNet is a speech denoiser</h3>
+        <p>It was trained on human speech recordings. Running it on a full music mix
+           will destroy the music. CleanWave only applies it to isolated vocal stems
+           after Demucs separation. On voice-forward AI tracks it helps; on heavily
+           produced instrumental content it adds little.</p>
+      </div>
+      <div class="honest-card">
+        <h3>Stem separation isn't magic either</h3>
+        <p>Demucs is the best freely available separator, but bleed exists. Heavily
+           reverbed vocals, complex polyphonic passages, and certain instruments can
+           end up in the wrong stem. The stems are good enough for cleanup purposes;
+           they're not studio-quality isolation.</p>
+      </div>
+    </div>
+    <p class="honest-close">
+      CleanWave is genuinely useful for loudness normalization, mastering export, and
+      reducing <em>some</em> artifacts on <em>some</em> tracks. If a track sounds good
+      already, it makes it platform-ready. If a track has heavy AI artifacts, it
+      reduces them without making things worse — which is more than most paid tools do.
+    </p>
+  </section>
+
+  <!-- ── Requirements ─────────────────────────────────────────────────── -->
+  <section class="section req-section">
+    <h2>Requirements</h2>
+    <div class="req-grid">
+      <div class="req-item">
+        <span class="req-icon">🖥️</span>
+        <span>Windows 10 / 11 — 64-bit</span>
+      </div>
+      <div class="req-item">
+        <span class="req-icon">💾</span>
+        <span>~800 MB disk (CPU) or ~3 GB (NVIDIA GPU)</span>
+      </div>
+      <div class="req-item">
+        <span class="req-icon">🧠</span>
+        <span>8 GB RAM minimum, 16 GB recommended for stems</span>
+      </div>
+      <div class="req-item">
+        <span class="req-icon">🎮</span>
+        <span>NVIDIA GPU optional — GPU makes Demucs 10× faster</span>
+      </div>
+      <div class="req-item">
+        <span class="req-icon">📡</span>
+        <span>Internet for first-run setup only (downloads Python, FFmpeg, AI models)</span>
+      </div>
+      <div class="req-item">
+        <span class="req-icon">🔒</span>
+        <span>No admin rights needed — installs entirely into its own folder</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Download ──────────────────────────────────────────────────────── -->
+  <section id="download" class="section download-section">
+    <h2>Download</h2>
+    <p>Free. No account. No telemetry. Everything stays on your machine.</p>
+
+    <div class="download-box">
+      <div class="dl-info">
+        <span class="dl-name">CleanWave 1.0</span>
+        <span class="dl-meta">Windows 64-bit · Self-contained installer</span>
+      </div>
+      <a href="https://github.com/contactinfinitysolutionsllc-ops/CleanWave/releases/latest/download/CleanWave_Setup_1.0.exe"
+         class="btn-primary dl-btn">
+        ⬇ Download Installer (.exe)
+      </a>
+    </div>
+
+    <div class="dl-alt">
+      <p>Or grab the portable zip and run <code>install.bat</code> yourself:</p>
+      <a href="https://github.com/contactinfinitysolutionsllc-ops/CleanWave/releases/latest"
+         class="btn-secondary">View all releases on GitHub →</a>
+    </div>
+
+    <div class="setup-steps">
+      <h3>First time setup</h3>
+      <ol>
+        <li>Run <code>CleanWave_Setup_1.0.exe</code> (or extract the zip)</li>
+        <li>When prompted, click <strong>Install Features</strong> — downloads Python, FFmpeg, and AI models (~800 MB, one time)</li>
+        <li>Launch from the Desktop shortcut or <code>run.bat</code></li>
+        <li>The built-in tour walks you through the interface on first launch</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ── Footer ───────────────────────────────────────────────────────── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">
+          <img src="assets/logo.png" alt="" class="nav-logo-img" />
+          CleanWave
+        </span>
+        <span class="footer-sub">by <a href="https://infinityhub.dev" target="_blank">InfinityHub</a></span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/contactinfinitysolutionsllc-ops/CleanWave" target="_blank">GitHub</a>
+        <a href="https://github.com/contactinfinitysolutionsllc-ops/CleanWave/issues" target="_blank">Report a Bug</a>
+        <a href="https://infinityhub.dev" target="_blank">InfinityHub.dev</a>
+      </div>
+      <div class="footer-right">
+        <p>Built on: <a href="https://github.com/facebookresearch/demucs" target="_blank">Demucs</a> ·
+           <a href="https://github.com/Rikorose/DeepFilterNet" target="_blank">DeepFilterNet</a> ·
+           <a href="https://ffmpeg.org" target="_blank">FFmpeg</a> · Python</p>
+        <p class="footer-license">MIT License · Free for personal and commercial use</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
