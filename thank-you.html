@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You — CleanWave</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <style>
+    .ty-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    .ty-logo-img {
+      width: 72px;
+      height: 72px;
+      border-radius: 16px;
+      margin-bottom: 1.2rem;
+    }
+    .ty-card {
+      background: var(--panel);
+      border: 1px solid var(--border2);
+      border-radius: 12px;
+      padding: 2.5rem 2.8rem;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.5);
+    }
+    .ty-check {
+      font-size: 2.8rem;
+      margin-bottom: 0.6rem;
+    }
+    .ty-card h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+    .ty-card .sub {
+      color: var(--txt2);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      max-width: 100%;
+    }
+    .ty-steps {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .ty-step {
+      display: flex;
+      gap: 0.8rem;
+      align-items: flex-start;
+    }
+    .ty-step-num {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--accent-dim);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1px;
+    }
+    .ty-step-text {
+      font-size: 0.88rem;
+      color: var(--txt2);
+      line-height: 1.5;
+    }
+    .ty-step-text strong { color: var(--txt); }
+    .ty-dl-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: #000;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.7rem 1.6rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.15s;
+      margin-bottom: 1rem;
+    }
+    .ty-dl-btn:hover { background: #00caf0; text-decoration: none; }
+    .ty-note {
+      font-size: 0.78rem;
+      color: var(--txt3);
+      margin-top: 1.5rem;
+    }
+    .ty-note a { color: var(--txt3); }
+    .ty-note a:hover { color: var(--txt2); }
+    .dl-status {
+      font-size: 0.82rem;
+      color: var(--green);
+      margin-top: 0.4rem;
+      min-height: 1.2em;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .dl-status.starting { color: var(--accent); animation: pulse 1.2s infinite; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">
+      <img src="assets/logo.png" alt="CleanWave" class="nav-logo-img" />
+      CleanWave
+    </a>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#download">Download</a>
+      <a href="https://infinityhub.dev" target="_blank">InfinityHub</a>
+    </div>
+  </nav>
+
+  <div class="ty-wrap">
+    <img src="assets/logo.png" alt="CleanWave" class="ty-logo-img" />
+    <div class="ty-card">
+      <div class="ty-check">✅</div>
+      <h1>You're all set.</h1>
+      <p class="sub">Your download is starting automatically. Your license key is on its way to your email — usually arrives within 60 seconds.</p>
+
+      <div class="ty-steps">
+        <div class="ty-step">
+          <div class="ty-step-num">1</div>
+          <div class="ty-step-text">
+            <strong>Install CleanWave</strong> — run the installer below. When prompted, click <strong>Install Features</strong> to download Python, FFmpeg, and the AI models (one time, ~800 MB).
+          </div>
+        </div>
+        <div class="ty-step">
+          <div class="ty-step-num">2</div>
+          <div class="ty-step-text">
+            <strong>Check your email</strong> — your license key will arrive from <em>noreply@infinityhub.dev</em>. Check your spam folder if it doesn't show up within a few minutes.
+          </div>
+        </div>
+        <div class="ty-step">
+          <div class="ty-step-num">3</div>
+          <div class="ty-step-text">
+            <strong>Enter your key</strong> — open CleanWave, click <strong>Enter License Key</strong> in the Help tab, paste your key, and click Activate. Stems, Editor, and AI processing will unlock immediately.
+          </div>
+        </div>
+      </div>
+
+      <a id="dl-btn"
+         href="https://github.com/contactinfinitysolutionsllc-ops/CleanWave/releases/latest/download/CleanWave_Setup_1.0.exe"
+         class="ty-dl-btn">
+        ⬇ Download CleanWave
+      </a>
+      <div id="dl-status" class="dl-status starting">Starting download…</div>
+
+      <p class="ty-note">
+        Problems? Email <a href="mailto:support@infinityhub.dev">support@infinityhub.dev</a>
+        and include your purchase email — we'll sort it out.<br>
+        <a href="/">← Back to CleanWave</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Auto-trigger download after a short delay
+    const DL_URL = 'https://github.com/contactinfinitysolutionsllc-ops/CleanWave/releases/latest/download/CleanWave_Setup_1.0.exe';
+    const statusEl = document.getElementById('dl-status');
+
+    setTimeout(() => {
+      const a = document.createElement('a');
+      a.href = DL_URL;
+      a.download = 'CleanWave_Setup_1.0.exe';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+
+      statusEl.classList.remove('starting');
+      statusEl.textContent = '✓ Download started — check your downloads folder';
+    }, 1200);
+  </script>
+
+</body>
+</html>
